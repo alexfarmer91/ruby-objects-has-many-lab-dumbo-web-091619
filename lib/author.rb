@@ -17,7 +17,10 @@ class Author
     post_instance.author = self
   end
 
-
+  def add_song_by_name(name)
+    new_song = Song.new(name)
+    new_song.artist = self
+  end
 
 
 end 
