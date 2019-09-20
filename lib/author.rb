@@ -22,5 +22,9 @@ class Author
     new_post.author = self
   end
 
+  def self.post_count
+    posts_w_author = Post.all.select { |post_instance| post_instance.author != nil || [] }
+    posts_w_author.length
+  end
 
 end 
