@@ -1,5 +1,3 @@
-require 'pry'
-require_relative "./song.rb"
 
 class Artist
 
