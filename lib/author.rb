@@ -1,9 +1,9 @@
 
 def Author 
 
+ def initialize()
 
-
-
+ end 
 
 
 
