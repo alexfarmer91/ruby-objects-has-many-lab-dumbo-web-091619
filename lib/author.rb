@@ -10,7 +10,7 @@ def Author
  end 
 
   def posts 
-    Post.all.select { |song_instance| song_instance.artist == self }
+    Post.all.select { |post_instance| post_instance.author == self }
   end 
 
 
