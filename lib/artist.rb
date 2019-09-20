@@ -22,9 +22,8 @@ class Artist
   end
 
   def self.song_count
-    songs_w_artist = Song.all.select { |song_instance| song_instance.artist != nil || [] }
+    songs_w_artist = Song.all.select { |song_instance| song_instance.artist_name != nil }
     songs_w_artist.length
-    #binding.pry
   end
   
   def songs 
